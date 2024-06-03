@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css">
+  <title>sign in</title>
+  <link rel="icon" href="https://www.snapdeal.com/img/icons/finalFavicon.ico">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg  #e40046">
+      <div class="container">
+        <h6 class="head">
+          <div class="h">
+            Brand Waali Quality, Bazaar Waali Deal!
+          </div>
+        </h6>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: aliceblue;">Impact@Snapdeal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: aliceblue;">Gift Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: aliceblue;">Help Center</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: aliceblue;">Sell On Snapdeal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: aliceblue;"><i class="fas fa-mobile-alt"></i> Download App</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="mainnav">
+      <div class="logoimg">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg" alt="" /></a>
+      </div>
+      <div class="moreitemslist  d-flex justify-content-end">
+        <div class="moreitems1">
+          <a href="">Cart <i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+      </div>
+    </nav>
+    </nav>
+  </header>
+  <div class="container">
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title text-center">Sign Up</h3>
+            <p class="text-muted text-center">
+              Create an account on snapdeal
+            </p>
+            <form id="form" action="login.php" method="post">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter Your Mobile No" id="mobile" name="mobile"
+                  required />
+                <p id="mobilee" class="text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter Your Email" id="email" name="email"
+                  required />
+                <p id="emaill" class="text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter Your Name" id="name" name="name" required />
+                <p id="namee" class="text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input type="date" class="form-control" placeholder="Enter DOB" id="dob" name="dob" required />
+                <p id="dobb" class="text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Enter Password" id="password" name="password"
+                  required />
+                <p id="passwordd" class="text-danger"></p>
+              </div>
+              <p class="text-muted">
+                Password should have a minimum of 6 characters, at least 1
+                numeric and 1 alphabet
+              </p>
+              <br /><br />
+              <div>
+                <button type="button" class="btn btn-primary btn-block" id="button" name="Store">
+                  Continue
+                </button>
+              </div>
+            </form>
+            <h5 class="text-center mt-3">Or Login using</h5>
+            <div class="text-center mt-3">
+              <div class="icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <img
+                  src="data:image/png;base64,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"
+                  alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br /><br /><br /><br />
+  <div id="footer">
+    <div>
+      <p class="footer-fonthead">POLICY INFO</p>
+      <p class="inside-flex-fontbody">
+        Privay Policy <br />
+        Terms of Sale <br />
+        Terms of USe <br />
+        Report Abuse & Tkedown Policy
+      </p>
+    </div>
+    <div>
+      <p class="footer-fonthead">COMPANY</p>
+      <p class="inside-flex-fontbody">
+        About Us <br />
+        Core Values <br />
+        Careers <br />
+        Blog <br />
+        Sitemap
+      </p>
+    </div>
+    <div>
+      <p class="footer-fonthead">SNAPDEAL BUSINESS</p>
+      <p class="inside-flex-fontbody">
+        Shopping App <br />
+        Sell on Snapdeal <br />
+        Advertise on Snapdeal <br />
+        Media Enquiries <br />
+        Be an Affiliate
+      </p>
+    </div>
+    <div>
+      <p class="footer-fonthead">NEED HELP ?</p>
+      <p class="inside-flex-fontbody">
+        FAQ <br />
+        Contact Us <br />
+        Online Shopping
+      </p>
+    </div>
+    <div>
+      <p class="footer-fonthead">SUBSCRIBE</p>
+      <div class="subs-box">
+        <input type="text" id="sub-text" placeholder="Your email address" />
+        <input type="button" id="sub-button" value="SUBSCRIBE" />
+      </div>
+      <p class="inside-flex-fontbody">
+        Register now to get updates on promotions and <br />
+        coupons.Or Download App
+      </p>
+    </div>
+  </div>
+
+  <div id="paymentconnect">
+    <div>
+      <p class="paymentconnect-fonthead">PAYMENT</p>
+      <div>
+        <img src="images/paymenticons.png" height="35px" />
+      </div>
+    </div>
+    <div>
+      <p>CONNECT</p>
+      <div id="connecticons">
+        <div>
+          <img src="https://i4.sdlcdn.com/img/footer/facebook@4x.png" height="30px" />
+        </div>
+        <div>
+          <img src="https://i1.sdlcdn.com/img/footer/twitter@4x.png" height="30px" />
+        </div>
+        <div>
+          <img src="https://i4.sdlcdn.com/img/footer/instagram@4x.png" height="30px" />
+        </div>
+        <div>
+          <img src="https://i2.sdlcdn.com/img/footer/linkedin@4x.png" height="30px" />
+        </div>
+        <div>
+          <img src="https://i1.sdlcdn.com/img/footer/youtube@4x.png" height="30px" />
+        </div>
+        <div>
+          <img src="https://i4.sdlcdn.com/img/footer/Telegram-Logo_112x112.png" height="30px" />
+        </div>
+        <div>
+          <img src="https://i1.sdlcdn.com/img/footer/whatsapp-logo-112x112.png" height="30px" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-description">
+    <p class="footer-desfont">
+      Mobiles: 4G Mobiles / Smartphones / Samsung Mobiles / Micromax Mobiles /
+      Lenovo Mobiles / iPhones / Vivo Mobiles / Oppo Mobiles / Intex Mobiles /
+      Asus Mobiles <br />
+      Mobiles Accessories: Mobile Covers / Leather Mobile Covers / Printed
+      Back Covers / 10000mAh Power Banks / Ambrane Power Banks / Intex Power
+      Banks / VR Headsets / Smart Watches / Smart Bands / Fitness Bands /<br />
+      Tempered Glass / Wall Chargers / Feature Phones / Bluetooth Devices<br />
+      TVs, Audio & Video: Televisions / LED TVs / Smart Televisions / Ultra HD
+      TV / FHD TV / 3D TV / HD Ready TV / Speakers / Headphones / Earphones /
+      Samsung Televisions / Micromax Televisions / LG Televisions /<br />
+      Home Theatre Systems<br />
+      Memory Cards: 8 GB Memory Cards / 16 GB Memory Cards / 32 GB Memory
+      Cards / 64 GB Memory Cards / Sandisk Memory Cards / Samsung Memory Cards
+      / Strontium Memory Cards<br />
+      Computers: Lenovo Laptops / Acer Laptops / Apple Macbooks / Notebook /
+      Laptops / External Hard Disks / Dell Laptops / HP Laptops / Pen
+      Drives<br />
+      Camera: DSLR Cameras / Canon Cameras / Nikon Coolpix / Nikon DSLR
+      Cameras / Sony Cameras / Digital Cameras / Panasonic Cameras / Samsung
+      Cameras<br />
+      Watches: Mens Watches / Womens Watches / Casio Watches / Titan Watches /
+      Fastrack Watches / Fossil watches / Casio Edifice<br />
+      Fashion Accessories: Bags / Wildcraft / Skybags / Fastrack Bags / Shoes
+      / Floaters & Sandals / Kurta / Raymond<br />
+      Men's Clothing: Shirts / Casual Shirts / Formal Shirts / Party Wear
+      Shirts / T Shirts / Polo T shirts / Low Rise Jeans / Slim Jeans /
+      Reversible Jackets / V Neck T shirts / Henley T shirts / Printed T
+      shirts / Round Neck T shirts /<br />
+      Chinos / Hooded Sweatshirts / Kurta Payjama Sets / Dhoti Kurta Sets /
+      Cotton Shirts / Full Sleeves Casual Shirts / Full Sleeves Formal Shirts
+      / Regular Fit Formal Shirts / Silk Party Shirts<br />
+      Women's Clothing: Saree / Designer Saree / Cotton Sarees / Georgette
+      Sarees / Chiffon Sarees / Net Sarees / Anarkali Suits / Kurtis /
+      Leggings & Churidars / Embroidered Lehengas / Bridal Lehengas / Black
+      Dresses /<br />
+      Jeggings / Jeans / A Line Skirts / Women's Gowns / Women's Dresses<br />
+      Home & Kitchen: Home Decor / Paintings / Clocks / Flasks & Thermos /
+      Photo Frames / Tupperware Kitchenware / Hawkins Kitchenware / Milton
+      Kitchenware<br />
+      Books: Fiction / Non Fiction / Children & Young Adults / Competitive
+      Exams / School Books / Academic Texts / Reference / Self Help<br />
+      FMCG Offer - Top Brands: Revlon / Street Wear / St. Ives / Accu-Chek
+      Health Monitoring Devices / Nutraj - California Walnuts / JSB Massagers
+      / Park Avenue / Gillette / Airwick / Veet / Livon / Mortein / Whisper /
+      KamaSutra /<br />
+      Durex / Bio Oil<br />
+      Appliances: Air Conditioners / Air Coolers / Refrigerators / Fans /
+      Washing Machines / Mircowaves / Irons / Trimmers / Hair Dryers / Shavers
+      / Vacuum Cleaners / Air Purifiers / CCTV Cameras / Ceiling Fans / Table
+      Fans /<br />
+      Exhaust Fans / Pedestal Fans / Ceiling Fans with 4 Blades / Ceiling Fans
+      with 6 Blades<br />
+      Home Furnishing: Bed Linen / Bed Sheets / Bath Linen / Mattresses /
+      Curtains / Cushion Covers / Pillows / Carpets / Kids Bedding<br />
+      Furniture Online: Sofa Set / Sofa Cum Beds / Chairs / Dining Sets / Bean
+      Bags / Shoe Storage / Dining Chairs / Storage Cabinets / Tables and
+      Desks / Bedroom Furniture / Living Room Furniture / XXXL Bean Bags /<br />
+      Chair Shape Bean Bags / Lounger Shape Bean Bags / Muddha Shape Bean Bags
+      / Black Color Bean Bags<br />
+      Toys & Games: Soft Toys / Dolls / Musical Toys / Kids Skates / Kids
+      Skate Scooters / Barbie Games / Action Figures / Electronic Toys /
+      Action figures / Toddler Toys / Die Cast Vehicle / Ride Ons &
+      Scooters<br />
+      Todays Deals: Bestsellers / Most Searched Products / Home Utility Offers
+      / Laptops & Accessories Offers / Men's Fashion / Women's Fashion / Price
+      Point Store / Laptops & Accessories Offers<br />
+      Online Shopping: Everything below 299 / Mens Footwear / Lehenga /
+      Dresses / Mobile Phones / Womens Watches / Kurtis / Smartphones / Womens
+      Footwear / Sarees / Casual Shoes / Laptops / Mens Watches /<br />
+      Womens Casual Shoes / 4G Mobiles / Frocks / Women Suits / Tops & Tunics
+      / Gowns / Watches / Sports & Bicycles / Water Geysers / Men's Sportswear
+      / Multi Speed Bi-cycles / Mobile Batteries / Kids T-shirts /<br />
+      Girls Frocks & Junpsuits / Kids Watches / Stationery Supplies / Baby
+      Care Products / Copper Water Bottles
+    </p>
+    <p id="aboutsnap">ABOUT SNAPDEAL</p>
+    <p class="footer-desfont">
+      About Snapdeal – India’s Ultimate Online Shopping Site Snapdeal’s vision
+      is to create India’s most reliable and frictionless commerce ecosystem
+      that creates life-changing experiences for buyers and sellers. In
+      February 2010, Kunal Bahl along with Rohit Bansal, started Snapdeal.com
+      - India’s largest online shopping marketplace, with the widest
+      assortment of 35 million plus products across 800 plus diverse
+      categories from over 125,000 regional, national, and international
+      brands and retailers. With millions of users and more than 300,000
+      sellers, Snapdeal is the online shopping site for Internet users across
+      the country, delivering to 6000+ cities and towns in India. In its
+      journey till now, Snapdeal has partnered with several global marquee
+      investors and individuals such as SoftBank, BlackRock, Temasek, Foxconn,
+      Alibaba, eBay Inc., Premji Invest, Intel Capital, Bessemer Venture
+      Partners, Mr. Ratan Tata, among others. Online Shopping – A Boon The
+      trend of online shopping is becoming a household name and so is
+      Snapdeal. Snapdeal is the preferred choice of hundreds of thousands of
+      online shoppers given its mammoth assortment of 15 million+ products,
+      quick delivery even to the remotest corners of the country, and daily
+      deals, discounts & offers to make products available at slashed down
+      prices to our valuable customers. Get Started! Shop Online Today at
+      Snapdeal If you have been missing out on all the fun of online shopping
+      thinking it requires one to be a technology aficionado then we have good
+      news for you. Shopping online particularly at Snapdeal is a child’s
+      play; all you need is a mobile phone or laptop or tablet with Internet
+      connection to get started. Simply log into Snapdeal.com and browse
+      through the wide assortment of products across categories. Once you have
+      zeroed in on your favorite products, simply place the order by filling
+      in the details; the products will be delivered right at your doorstep.
+      Fulfill Your Entrepreneurial Dreams! Sell Today at Snapdeal Thanks to
+      easy-to-understand, flexible policies and SD Advisors to help sellers at
+      each step, anyone from a manufacturer to wholesaler to retailer can sell
+      on Snapdeal. Begin your entrepreneurial journey with Snapdeal as a
+      seller by filling a simple registration form here. Once the registration
+      process is done, you can start selling your products to the entire
+      country by sitting at your home or office. Doesn't it sound thrilling?
+      Of course, it is and the excitement will build up with every order you
+      receive! Start selling at Snapdeal today and see your business reach
+      staggering heights. Shop on the Go – Install Snapdeal App Today! You can
+      shop for your favourite products at Snapdeal even on the go using
+      Snapdeal App. Available for both Android and Apple users, the app can be
+      downloaded from Google Play Store and Apple App Store respectively. The
+      app is quick, user-friendly, and enables shoppers buy products with a
+      breeze. What's more, get timely notifications on your phone or tablet so
+      that you don't miss amazing deals and offers. Download the app right now
+      and experience how fun it is to shop on your mobile!
+    </p>
+  </div>
+  <div id="lastfooter">
+    <div>
+      <p class="footer-desfont">
+        Copyright © 2020, Snapdeal Private Limited (formerly Jasper Infotech
+        Private Limited). All Rights Reserved
+      </p>
+    </div>
+    <div>
+      <p class="footer-desfont">Made with <span>❤️</span> in India</p>
+    </div>
+  </div>
+  </footer>
+
+  <script>
+    document.getElementById("button").addEventListener("click", function (event) {
+      event.preventDefault();
+
+
+      var mobile = document.getElementById("mobile").value.trim();
+      var email = document.getElementById("Email").value.trim();
+      var name = document.getElementById("name").value.trim();
+      var dob = document.getElementById("dob").value.trim();
+      var password = document.getElementById("password").value.trim();
+
+
+      var mobileRegex = /^\d{10}$/;
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      var isMobileValid = mobileRegex.test(mobile);
+      var isEmailValid = emailRegex.test(email);
+
+      document.getElementById("mobilee").textContent = "";
+      document.getElementById("emaill").textContent = "";
+      document.getElementById("namee").textContent = "";
+      document.getElementById("dobb").textContent = "";
+      document.getElementById("passwordd").textContent = "";
+
+
+      if (!isMobileValid) {
+        document.getElementById("mobilee").textContent = "Please enter a valid mobile number.";
+      }
+      if (!isEmailValid) {
+        document.getElementById("emaill").textContent = "Please enter a valid email address.";
+      }
+      if (name === "") {
+        document.getElementById("namee").textContent = "Please enter your name.";
+      }
+      if (dob === "") {
+        document.getElementById("dobb").textContent = "Please enter your date of birth.";
+      }
+      if (!isPasswordValid) {
+        document.getElementById("passwordd").textContent = "please enter a password";
+      }
+
+
+      if (isMobileValid && isEmailValid && name !== "" && dob !== "" && isPasswordValid) {
+
+        console.log("Form submitted successfully!");
+      }
+    });
+
+  </script>
+</body>
+
+</html>
+<style>
+  nav>div,
+  .topThinBar>div {
+    max-width: 1600px;
+  }
+</style>
