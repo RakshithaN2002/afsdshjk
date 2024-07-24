@@ -65,24 +65,19 @@
     </nav>
   </header>
   <div class="container">
-
     <div class="row justify-content-center mt-5">
       <div class="col-md-6">
         <div class="card">
           <div class="card-body">
             <h3 class="card-title text-center">Sign Up</h3>
-            <p class="text-muted text-center">
-              Create an account on snapdeal
-            </p>
-            <form id="form" action="login.php" method="post">
+            <p class="text-muted text-center">Create an account on snapdeal</p>
+            <form id="form" action="register.php" method="post">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Enter Your Mobile No" id="mobile" name="mobile"
-                  required />
+                <input type="text" class="form-control" placeholder="Enter Your Mobile No" id="mobile" name="mobile" required />
                 <p id="mobilee" class="text-danger"></p>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Enter Your Email" id="email" name="email"
-                  required />
+                <input type="email" class="form-control" placeholder="Enter Your Email" id="email" name="email" required />
                 <p id="emaill" class="text-danger"></p>
               </div>
               <div class="form-group">
@@ -94,21 +89,16 @@
                 <p id="dobb" class="text-danger"></p>
               </div>
               <div class="form-group">
-                <input type="password" class="form-control" placeholder="Enter Password" id="password" name="password"
-                  required />
+                <input type="password" class="form-control" placeholder="Enter Password" id="password" name="password" required />
                 <p id="passwordd" class="text-danger"></p>
               </div>
-              <p class="text-muted">
-                Password should have a minimum of 6 characters, at least 1
-                numeric and 1 alphabet
-              </p>
+              <p class="text-muted">Password should have a minimum of 6 characters, at least 1 numeric and 1 alphabet</p>
               <br /><br />
               <div>
-                <button type="button" class="btn btn-primary btn-block" id="button" name="Store">
-                  Continue
-                </button>
+                <button type="submit" class="btn btn-primary btn-block" id="button" name="Store">Continue</button>
               </div>
             </form>
+            
             <h5 class="text-center mt-3">Or Login using</h5>
             <div class="text-center mt-3">
               <div class="icons">
@@ -120,7 +110,9 @@ bqQk6PbUKw5+xzfJT8E7zFbq/eaonWRIBCgWUhYsw3aB1BSMlKO/XEo4Bf2CpbQFjZQFP/sKpi14hD8D
 
 zbYnQFHU0lR0RMb+c2kuwwPRTc28vPYSGZHwV9xERsptNE70pyL89hIVdBVjLNEjY0bG/mUBV0GqUW/y/NPm6kLunup1BZwaFvM7taHgjFgGU6HNmB+iU5GR09nMtq3fPxc+oM0Rir4ogBENfGRqib6ASsBdTXZngq8BmFCN8HZqOpj3nqIupzUbLQHXEIigLGexFDV2H7AAqM/Yj5UVb3LfwYuU7ll6kh57ZEO9R4zR1WnvrpKh/otk/mo6bfr6YeodHXgzlG19e76jU8PhwNAITV9sEb9M5RKVQ6+cMFUT9Nlgsu4NQFdmlENV83WB9nRm9I/HGlR10tLtbN1edRZr/AjpXLYHeiuZrCnitx0u1fNqN2CSmfc7cm6i227spr7p43+JfdG1cPVm9Ps0q/U653JDWmnU69UPiMzgUAgEAgEAoFAIBAIBAKBQCAQCAQCMn4HhX1H8VpTN58AAAAASUVORK5CYII="
                   alt="" />
+                  
               </div>
+              
             </div>
           </div>
         </div>
@@ -354,29 +346,28 @@ zbYnQFHU0lR0RMb+c2kuwwPRTc28vPYSGZHwV9xERsptNE70pyL89hIVdBVjLNEjY0bG/mUBV0GqUW/y
   </footer>
 
   <script>
-    document.getElementById("button").addEventListener("click", function (event) {
+    document.getElementById("button").addEventListener("click", function(event) {
       event.preventDefault();
 
-
       var mobile = document.getElementById("mobile").value.trim();
-      var email = document.getElementById("Email").value.trim();
+      var email = document.getElementById("email").value.trim();
       var name = document.getElementById("name").value.trim();
       var dob = document.getElementById("dob").value.trim();
       var password = document.getElementById("password").value.trim();
 
-
       var mobileRegex = /^\d{10}$/;
       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
 
       var isMobileValid = mobileRegex.test(mobile);
       var isEmailValid = emailRegex.test(email);
+      var isPasswordValid = passwordRegex.test(password);
 
       document.getElementById("mobilee").textContent = "";
       document.getElementById("emaill").textContent = "";
       document.getElementById("namee").textContent = "";
       document.getElementById("dobb").textContent = "";
       document.getElementById("passwordd").textContent = "";
-
 
       if (!isMobileValid) {
         document.getElementById("mobilee").textContent = "Please enter a valid mobile number.";
@@ -391,23 +382,18 @@ zbYnQFHU0lR0RMb+c2kuwwPRTc28vPYSGZHwV9xERsptNE70pyL89hIVdBVjLNEjY0bG/mUBV0GqUW/y
         document.getElementById("dobb").textContent = "Please enter your date of birth.";
       }
       if (!isPasswordValid) {
-        document.getElementById("passwordd").textContent = "please enter a password";
+        document.getElementById("passwordd").textContent = "Password should have a minimum of 6 characters, at least 1 numeric and 1 alphabet.";
       }
-
 
       if (isMobileValid && isEmailValid && name !== "" && dob !== "" && isPasswordValid) {
-
-        console.log("Form submitted successfully!");
+        document.getElementById("form").submit();
       }
     });
-
   </script>
-</body>
 
-</html>
-<style>
-  nav>div,
-  .topThinBar>div {
-    max-width: 1600px;
-  }
-</style>
+  <style>
+    nav>div,
+    .topThinBar>div {
+      max-width: 1600px;
+    }
+  </style>
